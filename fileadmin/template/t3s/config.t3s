@@ -1,0 +1,4 @@
+config.baseURL = {$site.baseurl}
+config.debug = {$site.debug}
+
+config.doctype = html5
