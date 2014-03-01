@@ -1,0 +1,13 @@
+site {
+	baseurl = example.org
+	debug = 1
+}
+
+filepaths {
+	template = fileadmin/template
+	html = {$filepaths.template}/html
+	css = {$filepaths.template}/css
+	js = {$filepaths.template}/js
+	images = {$filepaths.template}/img
+	typoscript = {$filepaths.template}/t3s
+}
