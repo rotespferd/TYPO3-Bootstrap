@@ -1,0 +1,50 @@
+page = PAGE    
+page {
+	# Regular pages always have typeNum = 0
+	typeNum = 0
+
+	shortcutIcon = {$filepaths.images}/favicon.ico
+
+	# Add a TEMPLATE object to the page
+	10 = TEMPLATE
+	10 {
+
+	}
+
+	config.index_enable = 1
+
+	includeJS {
+		main = {$filepaths.js}/main.js
+	}
+
+	includeJSlibs {
+			jquery = {$filepaths.js}/libs/jquery.min.js
+			underscore = {$filepaths.js}/libs/underscore.min.js
+	}
+
+	includeCSS {
+			main = {$filepaths.css}/main.css
+	}
+
+}
+
+[browser = msie]
+page.includeCSS.msie = {$filepaths.css}/fix_ie.css
+[global]
+
+page.meta {
+# Use the meta tag 'description' from the constants as default value
+# If the meta field description in the page properties is filled, then this will override the default.
+	description = {$meta.description}
+	description.override.field = description
+
+	author = {$meta.author}
+	author.override.field = author
+
+	keywords = {$meta.keywords}
+	keywords.override.field = keywords
+
+	robots.value = {$meta.robots}
+	revisit = {$meta.revisit}
+	copyright = {$meta.copyright}
+}

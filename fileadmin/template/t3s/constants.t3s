@@ -11,3 +11,12 @@ filepaths {
 	images = {$filepaths.template}/img
 	typoscript = {$filepaths.template}/t3s
 }
+
+meta {
+	description = 
+	author = Marian Sievers
+	keywords = 
+	robots = 
+	revisit = 
+	copyright = 
+}
