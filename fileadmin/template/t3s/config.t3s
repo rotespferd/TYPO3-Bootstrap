@@ -17,3 +17,11 @@ config.baseURL = http://{$site.baseurl}/
 [globalString = IENV:TYPO3_SITE_URL = https://{$site.baseurl}/]
 config.baseURL = https://{$site.baseurl}/
 [global]
+
+# config of caching
+config {
+    cache_period = 86400
+    cache_clearAtMidnight = 0
+    no_cache = {$site.debug}
+}
+page.config.no_cache = {$site.debug}
