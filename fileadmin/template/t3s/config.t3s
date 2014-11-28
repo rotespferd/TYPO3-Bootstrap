@@ -13,7 +13,7 @@ config {
 }
 
 # Set baseURL setting for http or https
-config.baseURL = http://{$config.domain}/
-[globalString = IENV:TYPO3_SITE_URL = https://{$config.domain}/]
-config.baseURL = https://{$config.domain}/
+config.baseURL = http://{$site.baseurl}/
+[globalString = IENV:TYPO3_SITE_URL = https://{$site.baseurl}/]
+config.baseURL = https://{$site.baseurl}/
 [global]
